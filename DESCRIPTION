@@ -1,10 +1,10 @@
 Package: se.immigration.data
 Title: Swedish Migration Agency data on immigration
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Bob", "Sacamano", email = "sacamano@twititytwat.com", role = c("aut", "cre"))
+Description: Contains data from the Swedish Migration Agency in an R friendly format
 Depends: R (>= 3.3.1)
-License: What license is it under?
+License: MIT
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1

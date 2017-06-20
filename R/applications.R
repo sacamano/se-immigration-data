@@ -2,7 +2,7 @@
 #' 
 #' Monthly data on asylum applications to Sweden
 #' 
-#' Data is collected from the publicly available Excel and PDF files on the Swedish Migration Agency website. The package is not a formal publication of Swedish Migration Agency and the author has no affiliation with the agency.
+#' Data is collected from the publicly available Excel and PDF files on the Swedish Migration Agency website. The package is not a formal publication of the Swedish Migration Agency and the author has no affiliation with the agency.
 #' 
 #' @format A data frame with 12 variables:
 #' \describe{
