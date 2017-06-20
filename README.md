@@ -1,5 +1,5 @@
 # se-immigration-data
-R data package containing monthly data on asylum applications to Sweden. The data is collected from the publicly available Excel/PDF files on the Swedish Migration Agency website (see [extract.R](data-raw/extract.R) and [download.R](data-raw/download.R)).
+R data package containing monthly data on asylum applications to Sweden. The data is collected from the publicly available Excel/PDF files on the [Swedish Migration Agency website](https://www.migrationsverket.se/) (see [extract.R](data-raw/extract.R) and [download.R](data-raw/download.R)).
 
 Neither the package nor the author have any formal affiliation with the agency; do not consider this an official release by the Swedish Migration Agency.
 
@@ -68,4 +68,4 @@ mutate(applications, date = as.Date(paste0(year_month, "-01"), format = "%Y-%m-%
   )
 ```
 
-<img align="center" src="https://i.imgur.com/EcqAB75.png", alt="Total number of asylum applications to Sweden between 2009 and 2017">
+<img align="center" src="https://i.imgur.com/EcqAB75.png" alt="Total number of asylum applications to Sweden between 2009 and 2017">
