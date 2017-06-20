@@ -1,8 +1,24 @@
-#' Assylum applications
+#' Asylum applications to Sweden
 #' 
-#' Monthly data from the Swedish Migration Agency.
+#' Monthly data on asylum applications to Sweden
 #' 
-#' @format A data frame with 12 variables: \code{year_month}, \code{applications},
-#' \code{male}, \code{female}, \code{minors}, \code{unacc_minors}, \code{decisions},
-#' \code{granted}, \code{rejected}, \code{dublin}, \code{others}, \code{avg_time}
+#' Data is collected from the publicly available Excel and PDF files on the Swedish Migration Agency website. The package is not a formal publication of Swedish Migration Agency and the author has no affiliation with the agency.
+#' 
+#' @format A data frame with 12 variables:
+#' \describe{
+#' \item{\code{year_month}}{Year-month (chr).}
+#' \item{\code{total}}{Total number of applications.}
+#' \item{\code{male}}{Number of applications from male applicants.}
+#' \item{\code{female}}{Number of applications from female applicants.}
+#' \item{\code{minors}}{Number of applications from underage applicants (<18 yrs). Including unaccompanied minors.}
+#' \item{\code{unacc_minors}}{Number of applications from unaccompanied minors: underage applicants who have arrived in Sweden without a legal custodian.}
+#' \item{\code{decisions}}{Number of applications that have been decided on.}
+#' \item{\code{granted}}{Number of applications whose applicant have been granted asylum.}
+#' \item{\code{rejected}}{Number of applications whose applicant have been denied asylum.}
+#' \item{\code{dublin}}{Number of applications that fall under the "Dublin Regulation" and require no consideration from Sweden.}
+#' \item{\code{others}}{Number of applications that have been disregarded for various reasons: withdrawals, AWOLs, etc.}
+#' \item{\code{avg_time}}{Average number of days an applications took to process}
+#' }
+#' 
+#' @source \url{https://migrationsverket.se}
 "applications"

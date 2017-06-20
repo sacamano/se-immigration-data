@@ -1,4 +1,4 @@
-year_month,applications,male,female,minors,unacc_minors,decisions,granted,rejected,dublin,others,avg_time
+year_month,total,male,female,minors,unacc_minors,decisions,granted,rejected,dublin,others,avg_time
 2009-01,1932,1242,690,517,153,1559,300,797,224,238,223
 2009-02,1669,1103,566,398,121,2394,561,1286,292,255,235
 2009-03,1731,1141,590,455,146,2864,734,1544,288,298,226
