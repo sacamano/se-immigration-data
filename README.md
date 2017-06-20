@@ -15,7 +15,7 @@ Monthly data on asylum applications.
 
 | Variable | Description |
 | :--- | --- |
-| year_month | Year-month as `chr |
+| year_month | Year-month as `chr` |
 | total | Total number of applications |
 | male | Number of applications from male applicants |
 | female | Number of applications from female applicants |
