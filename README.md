@@ -14,14 +14,21 @@ library(dplyr)
 library(ggplot2)
 library(se.immigration.data)
 
+graph_colors <- c("applications" = "#4db8ff", "granted" = "#c20047")
 mutate(applications, date = as.Date(paste0(year_month, "-01"), format = "%Y-%m-%d")) %>%
-  ggplot(aes(x = date, y = total)) + geom_area(color = "dodgerblue4", fill = "dodgerblue") +
-  scale_x_date(date_breaks = "6 months") + ggtitle("Applications per month") +
+  ggplot(aes(x = date)) + geom_area(aes(y = total, fill = "applications"), color = "#0068ad") +
+  geom_line(aes(y = granted, color = "granted")) +
+  scale_color_manual(name = "", labels = c("Granted"), values = graph_colors) +
+  scale_fill_manual(name = "", labels = c("Total"), values = graph_colors) +
+  scale_x_date(date_breaks = "6 months") + labs(title = "Applications per month") +
   theme_classic() + theme(
+    plot.title = element_text(margin = margin(0, 0, 10), hjust = 0.4),
+    plot.margin = unit(c(20,20,20,20), "points"),
+    legend.position = c(0.2, 0.95), legend.key.height = unit(10, "points"),
+    legend.spacing.y = unit(-10, "points"), legend.box = "horizontal",
     axis.text.x = element_text(angle = 45, hjust = 1),
     axis.title.x = element_blank(), axis.title.y = element_blank()
   )
-
 ```
 
-![Total number of asylum applications to Sweden between 2009 and 2017](https://i.imgur.com/C2AzbCp.png)
+<img align="center" src="https://i.imgur.com/EcqAB75.png", alt="Total number of asylum applications to Sweden between 2009 and 2017">
