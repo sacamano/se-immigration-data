@@ -1,6 +1,6 @@
 applications_colnames <- c(
   "year_month",
-  "applications",
+  "total",
   "male",
   "female",
   "minors",
